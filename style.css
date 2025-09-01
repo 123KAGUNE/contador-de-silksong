@@ -1,0 +1,177 @@
+/* Centralização e ajuste do vídeo de fundo */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.7;
+}
+.links-loja-central {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+.links-loja-central .loja-link {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  transition: transform 0.18s, box-shadow 0.18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links-loja-central .loja-link:hover {
+  transform: scale(1.13);
+  box-shadow: 0 2px 12px #0003;
+  background: rgba(0,0,0,0.08);
+}
+.links-loja-central .loja-icone {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 1px 6px #0002;
+  object-fit: contain;
+}
+a.cherry-link {
+  background: #222;
+}
+a.cherry-link:hover {
+  background: #444;
+}
+/* Botão de música fixo no canto superior direito */
+#btn-musica.caixa-musica {
+  position: fixed;
+  top: 32px;
+  right: 40px;
+  z-index: 10;
+  background: rgba(255,255,255,0.85);
+  color: #111;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #0002;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+#btn-musica.caixa-musica:hover {
+  background: #0078d7;
+  color: #fff;
+}
+/* Caixa central semi-transparente */
+.caixa-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 24px #0003;
+  border-radius: 18px;
+  padding: 36px 28px 28px 28px;
+  min-width: 320px;
+  max-width: 95vw;
+  width: 400px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.loja-icone {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 1px 4px #0002;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+a.steam-link:hover {
+  background: #222c37;
+  color: #66c0f4;
+}
+a.ig-link {
+  background: #ff6600;
+  color: #fff;
+}
+a.ig-link:hover {
+  background: #ff8533;
+  color: #fff;
+}
+.loja-icone {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 0 1px 4px #0002;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+h1 {
+  color: #0078d7;
+}
+
+a#botaoCompra {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: #0078d7;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 6px;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #0001;
+}
+a#botaoCompra:hover {
+  background: #005fa3;
+}
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+h2, h1, .contador {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+.centralizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.centralizado .loja-link {
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+
+h1 {
+  color: #0078d7;
+}
