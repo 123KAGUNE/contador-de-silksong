@@ -2,10 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Contador regressivo
 
   // Contador regressivo
+
   function atualizarContadorRegressivo() {
-    const destino = new Date("2025-09-04T00:00:00");
+
+    const destinoLisboa = new Date(Date.UTC(2025, 8, 4, 14, 0, 0)); // 15:00 Lisboa = 14:00 UTC
     const agora = new Date();
-    const diferenca = destino - agora;
+    const diferenca = destinoLisboa - agora;
 
     if (diferenca <= 0) {
       document.getElementById("contadorRegressivo").textContent = "Chegou o dia!";
